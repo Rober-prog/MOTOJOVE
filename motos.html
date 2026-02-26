@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Motos nuevas y de ocasión en Moto Jove Molins. Punto de venta autorizado Royal Enfield. Molins de Rei, Barcelona.">
+  <title>Motos en Venta | Moto Jove Molins</title>
+  <link rel="icon" href="LOGO.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-es">
+
+<!-- ============================================
+     HEADER
+     ============================================ -->
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="header-logo"><img src="LOGO.png" alt="Moto Jove Molins Logo"></a>
+      <div class="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <nav class="header-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="index.html">
+          <span class="lang-es">Inicio</span><span class="lang-cat">Inici</span>
+        </a></li>
+        <li><a href="index.html#sobre">
+          <span class="lang-es">Nosotros</span><span class="lang-cat">Nosaltres</span>
+        </a></li>
+        <li><a href="index.html#servicios">
+          <span class="lang-es">Servicios</span><span class="lang-cat">Serveis</span>
+        </a></li>
+        <li><a href="index.html#galeria">
+          <span class="lang-es">Galería</span><span class="lang-cat">Galeria</span>
+        </a></li>
+        <li><a href="index.html#contacto">
+          <span class="lang-es">Contacto</span><span class="lang-cat">Contacte</span>
+        </a></li>
+        <li><a href="index.html#mapa">
+          <span class="lang-es">Mapa</span><span class="lang-cat">Mapa</span>
+        </a></li>
+        <li><button data-open-schedule>
+          <span class="lang-es">Horario</span><span class="lang-cat">Horari</span>
+        </button></li>
+        <li><a href="motos.html" class="active">
+          <span class="lang-es">Motos en venta</span><span class="lang-cat">Motos en venda</span>
+        </a></li>
+      </ul>
+      <div class="lang-selector">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="cat">CAT</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-overlay"></div>
+<nav class="mobile-nav">
+  <a href="index.html"><span class="lang-es">Inicio</span><span class="lang-cat">Inici</span></a>
+  <a href="index.html#sobre"><span class="lang-es">Nosotros</span><span class="lang-cat">Nosaltres</span></a>
+  <a href="index.html#servicios"><span class="lang-es">Servicios</span><span class="lang-cat">Serveis</span></a>
+  <a href="index.html#galeria"><span class="lang-es">Galería</span><span class="lang-cat">Galeria</span></a>
+  <a href="index.html#contacto"><span class="lang-es">Contacto</span><span class="lang-cat">Contacte</span></a>
+  <a href="index.html#mapa"><span class="lang-es">Mapa</span><span class="lang-cat">Mapa</span></a>
+  <button data-open-schedule><span class="lang-es">Horario</span><span class="lang-cat">Horari</span></button>
+  <a href="motos.html" style="color:var(--orange);"><span class="lang-es">Motos en venta</span><span class="lang-cat">Motos en venda</span></a>
+  <div class="mobile-lang-selector">
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="cat">CAT</button>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO MOTOS
+     ============================================ -->
+<section class="motos-hero">
+  <div class="container">
+    <h1 class="section-title reveal">
+      <span class="lang-es">Motos nuevas y de ocasión</span>
+      <span class="lang-cat">Motos noves i d'ocasió</span>
+    </h1>
+    <p class="section-subtitle reveal" style="margin:0 auto;">
+      <span class="lang-es">Descubre nuestra selección de motocicletas nuevas y de segunda mano certificadas. Punto de venta autorizado Royal Enfield. Financiación a medida y servicio de transferencia incluido.</span>
+      <span class="lang-cat">Descobreix la nostra selecció de motocicletes noves i de segona mà certificades. Punt de venda autoritzat Royal Enfield. Finançament a mida i servei de transferència inclòs.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================================
+     MOTOS NUEVAS
+     ============================================ -->
+<section class="motos-section" style="background:var(--dark-gray);">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title">
+        <span class="lang-es">Motos nuevas</span>
+        <span class="lang-cat">Motos noves</span>
+      </h2>
+      <p class="section-subtitle">
+        <span class="lang-es">Modelos nuevos de las mejores marcas. Punto de venta autorizado Royal Enfield.</span>
+        <span class="lang-cat">Models nous de les millors marques. Punt de venda autoritzat Royal Enfield.</span>
+      </p>
+    </div>
+    <div class="motos-grid">
+
+      <!-- Moto Nueva 1 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge">
+            <span class="lang-es">Nueva</span><span class="lang-cat">Nova</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Royal Enfield Classic 350</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">349 cc</span>
+            <span class="moto-spec">2025</span>
+            <span class="moto-spec">20,1 CV</span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-primary">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Nueva 2 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge">
+            <span class="lang-es">Nueva</span><span class="lang-cat">Nova</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Royal Enfield Meteor 350</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">349 cc</span>
+            <span class="moto-spec">2025</span>
+            <span class="moto-spec">20,2 CV</span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-primary">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Nueva 3 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge">
+            <span class="lang-es">Nueva</span><span class="lang-cat">Nova</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Royal Enfield Himalayan 450</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">452 cc</span>
+            <span class="moto-spec">2025</span>
+            <span class="moto-spec">40 CV</span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-primary">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Nueva 4 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge">
+            <span class="lang-es">Nueva</span><span class="lang-cat">Nova</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Royal Enfield Hunter 350</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">349 cc</span>
+            <span class="moto-spec">2025</span>
+            <span class="moto-spec">20,2 CV</span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-primary">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Nueva 5 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge">
+            <span class="lang-es">Nueva</span><span class="lang-cat">Nova</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Royal Enfield Continental GT 650</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">648 cc</span>
+            <span class="moto-spec">2025</span>
+            <span class="moto-spec">47 CV</span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-primary">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Nueva 6 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge">
+            <span class="lang-es">Nueva</span><span class="lang-cat">Nova</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Royal Enfield Interceptor 650</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">648 cc</span>
+            <span class="moto-spec">2025</span>
+            <span class="moto-spec">47 CV</span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-primary">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ============================================
+     MOTOS DE OCASIÓN
+     ============================================ -->
+<section class="motos-section" style="background:var(--black);">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title">
+        <span class="lang-es">Motos de ocasión</span>
+        <span class="lang-cat">Motos d'ocasió</span>
+      </h2>
+      <p class="section-subtitle">
+        <span class="lang-es">Motocicletas de segunda mano revisadas y certificadas por nuestro equipo. Garantía de calidad y confianza.</span>
+        <span class="lang-cat">Motocicletes de segona mà revisades i certificades pel nostre equip. Garantia de qualitat i confiança.</span>
+      </p>
+    </div>
+    <div class="motos-grid">
+
+      <!-- Moto Ocasión 1 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge" style="background:var(--orange);">
+            <span class="lang-es">Ocasión</span><span class="lang-cat">Ocasió</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Kymco Agility City 125</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">125 cc</span>
+            <span class="moto-spec">2022</span>
+            <span class="moto-spec">
+              <span class="lang-es">Revisada</span><span class="lang-cat">Revisada</span>
+            </span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-outline">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Ocasión 2 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge" style="background:var(--orange);">
+            <span class="lang-es">Ocasión</span><span class="lang-cat">Ocasió</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Suzuki V-Strom 650</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">645 cc</span>
+            <span class="moto-spec">2021</span>
+            <span class="moto-spec">
+              <span class="lang-es">Revisada</span><span class="lang-cat">Revisada</span>
+            </span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-outline">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Ocasión 3 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge" style="background:var(--orange);">
+            <span class="lang-es">Ocasión</span><span class="lang-cat">Ocasió</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Kawasaki Z650</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">649 cc</span>
+            <span class="moto-spec">2020</span>
+            <span class="moto-spec">
+              <span class="lang-es">Revisada</span><span class="lang-cat">Revisada</span>
+            </span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-outline">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Ocasión 4 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge" style="background:var(--orange);">
+            <span class="lang-es">Ocasión</span><span class="lang-cat">Ocasió</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Aprilia SR 300 Max</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">278 cc</span>
+            <span class="moto-spec">2023</span>
+            <span class="moto-spec">
+              <span class="lang-es">Revisada</span><span class="lang-cat">Revisada</span>
+            </span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-outline">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Ocasión 5 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge" style="background:var(--orange);">
+            <span class="lang-es">Ocasión</span><span class="lang-cat">Ocasió</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Derbi Senda DRD 125</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">125 cc</span>
+            <span class="moto-spec">2021</span>
+            <span class="moto-spec">
+              <span class="lang-es">Revisada</span><span class="lang-cat">Revisada</span>
+            </span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-outline">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Moto Ocasión 6 -->
+      <div class="moto-card reveal">
+        <div class="moto-card-image">
+          <div class="moto-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+          <span class="moto-badge" style="background:var(--orange);">
+            <span class="lang-es">Ocasión</span><span class="lang-cat">Ocasió</span>
+          </span>
+        </div>
+        <div class="moto-card-body">
+          <h3>Peugeot Speedfight 125</h3>
+          <div class="moto-specs">
+            <span class="moto-spec">125 cc</span>
+            <span class="moto-spec">2022</span>
+            <span class="moto-spec">
+              <span class="lang-es">Revisada</span><span class="lang-cat">Revisada</span>
+            </span>
+          </div>
+          <div class="moto-price">
+            <span class="lang-es">Consultar precio</span>
+            <span class="lang-cat">Consultar preu</span>
+          </div>
+          <a href="index.html#contacto" class="btn btn-outline">
+            <span class="lang-es">Más información</span>
+            <span class="lang-cat">Més informació</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA SECTION
+     ============================================ -->
+<section class="section-padding" style="background:var(--dark-gray);text-align:center;">
+  <div class="container reveal">
+    <h2 class="section-title" style="display:inline-block;">
+      <span class="lang-es">¿Interesado en alguna moto?</span>
+      <span class="lang-cat">Interessat en alguna moto?</span>
+    </h2>
+    <p class="section-subtitle" style="margin:0 auto 24px;">
+      <span class="lang-es">Contacta con nosotros para más información, financiación personalizada o concertar una visita al taller.</span>
+      <span class="lang-cat">Contacta amb nosaltres per a més informació, finançament personalitzat o concertar una visita al taller.</span>
+    </p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="index.html#contacto" class="btn btn-primary">
+        <span class="lang-es">Contactar ahora</span>
+        <span class="lang-cat">Contactar ara</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+      </a>
+      <a href="tel:936801584" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        936 80 15 84
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="LOGO.png" alt="Moto Jove Molins" style="background:#111;padding:8px;border-radius:8px;">
+        <p>
+          <span class="lang-es">Taller multimarca y concesionario de motocicletas en Molins de Rei. Tu moto en las mejores manos.</span>
+          <span class="lang-cat">Taller multimarca i concessionari de motocicletes a Molins de Rei. La teva moto en les millors mans.</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>
+          <span class="lang-es">Navegación</span>
+          <span class="lang-cat">Navegació</span>
+        </h4>
+        <a href="index.html"><span class="lang-es">Inicio</span><span class="lang-cat">Inici</span></a>
+        <a href="index.html#servicios"><span class="lang-es">Servicios</span><span class="lang-cat">Serveis</span></a>
+        <a href="index.html#galeria"><span class="lang-es">Galería</span><span class="lang-cat">Galeria</span></a>
+        <a href="index.html#contacto"><span class="lang-es">Contacto</span><span class="lang-cat">Contacte</span></a>
+        <a href="motos.html"><span class="lang-es">Motos en venta</span><span class="lang-cat">Motos en venda</span></a>
+      </div>
+      <div class="footer-col">
+        <h4>
+          <span class="lang-es">Servicios</span>
+          <span class="lang-cat">Serveis</span>
+        </h4>
+        <a href="index.html#servicios"><span class="lang-es">Reparación</span><span class="lang-cat">Reparació</span></a>
+        <a href="index.html#servicios"><span class="lang-es">Mantenimiento</span><span class="lang-cat">Manteniment</span></a>
+        <a href="index.html#servicios"><span class="lang-es">Venta de motos</span><span class="lang-cat">Venda de motos</span></a>
+        <a href="index.html#servicios"><span class="lang-es">Recambios</span><span class="lang-cat">Recanvis</span></a>
+        <a href="index.html#servicios"><span class="lang-es">ITV</span><span class="lang-cat">ITV</span></a>
+      </div>
+      <div class="footer-col">
+        <h4>
+          <span class="lang-es">Contacto</span>
+          <span class="lang-cat">Contacte</span>
+        </h4>
+        <p>Rambla de la Granja, 22<br>08750 Molins de Rei<br>Barcelona</p>
+        <p style="margin-top:8px;"><a href="tel:936801584" style="color:var(--orange);">936 80 15 84</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Moto Jove Molins.
+        <span class="lang-es">Todos los derechos reservados.</span>
+        <span class="lang-cat">Tots els drets reservats.</span>
+      </p>
+      <div class="footer-legal-links">
+        <a href="#" data-open-legal="legalAvisoMotos">
+          <span class="lang-es">Aviso legal</span>
+          <span class="lang-cat">Avís legal</span>
+        </a>
+        <a href="#" data-open-legal="legalPrivacidadMotos">
+          <span class="lang-es">Política de privacidad</span>
+          <span class="lang-cat">Política de privacitat</span>
+        </a>
+        <a href="#" data-open-legal="legalCookiesMotos">
+          <span class="lang-es">Política de cookies</span>
+          <span class="lang-cat">Política de cookies</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================
+     FLOATING CONTACT BUTTON
+     ============================================ -->
+<div class="floating-btn" title="Contacto" onclick="window.location.href='index.html#contacto'">
+  <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+</div>
+
+<!-- ============================================
+     SCHEDULE MODAL
+     ============================================ -->
+<div class="modal-overlay" id="scheduleModal">
+  <div class="modal">
+    <button class="modal-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <h2>
+      <span class="lang-es"><span class="highlight">Horario</span> de apertura</span>
+      <span class="lang-cat"><span class="highlight">Horari</span> d'obertura</span>
+    </h2>
+    <p>
+      <span class="lang-es">Moto Jove Molins – Rambla de la Granja, 22, Molins de Rei</span>
+      <span class="lang-cat">Moto Jove Molins – Rambla de la Granja, 22, Molins de Rei</span>
+    </p>
+    <div class="schedule-table">
+      <div class="lang-es">
+        <div class="schedule-row"><span class="day">Lunes</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Martes</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Miércoles</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Jueves</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Viernes</span><span class="hours">9:00–14:00, 16:00–18:00</span></div>
+        <div class="schedule-row closed"><span class="day">Sábado</span><span class="hours">Cerrado</span></div>
+        <div class="schedule-row closed"><span class="day">Domingo</span><span class="hours">Cerrado</span></div>
+      </div>
+      <div class="lang-cat">
+        <div class="schedule-row"><span class="day">Dilluns</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Dimarts</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Dimecres</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Dijous</span><span class="hours">9:00–14:00, 16:00–19:00</span></div>
+        <div class="schedule-row"><span class="day">Divendres</span><span class="hours">9:00–14:00, 16:00–18:00</span></div>
+        <div class="schedule-row closed"><span class="day">Dissabte</span><span class="hours">Tancat</span></div>
+        <div class="schedule-row closed"><span class="day">Diumenge</span><span class="hours">Tancat</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     COOKIE BANNER
+     ============================================ -->
+<div class="cookie-banner">
+  <div class="container cookie-inner">
+    <div class="cookie-text">
+      <p>
+        <span class="lang-es">Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación. Al continuar navegando, aceptas su uso. <a href="#" data-open-legal="legalCookiesMotos">Política de cookies</a>.</span>
+        <span class="lang-cat">Utilitzem cookies pròpies i de tercers per millorar la teva experiència de navegació. En continuar navegant, acceptes el seu ús. <a href="#" data-open-legal="legalCookiesMotos">Política de cookies</a>.</span>
+      </p>
+    </div>
+    <div class="cookie-buttons">
+      <button class="btn btn-primary" id="cookieAccept">
+        <span class="lang-es">Aceptar</span>
+        <span class="lang-cat">Acceptar</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     LEGAL MODALS (Motos page)
+     ============================================ -->
+<div class="legal-modal-overlay" id="legalAvisoMotos">
+  <div class="legal-modal">
+    <button class="modal-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <div class="lang-es">
+      <h2>Aviso legal</h2>
+      <p>Moto Jove Molins, con domicilio en Rambla de la Granja, 22, 08750 Molins de Rei, Barcelona. Teléfono: 936 80 15 84.</p>
+      <p>El presente aviso legal regula el uso del sitio web de Moto Jove Molins. Todos los contenidos son propiedad de Moto Jove Molins o se utilizan con la debida autorización. Queda prohibida su reproducción sin consentimiento previo. Este aviso legal se rige por la legislación española.</p>
+    </div>
+    <div class="lang-cat">
+      <h2>Avís legal</h2>
+      <p>Moto Jove Molins, amb domicili a Rambla de la Granja, 22, 08750 Molins de Rei, Barcelona. Telèfon: 936 80 15 84.</p>
+      <p>El present avís legal regula l'ús del lloc web de Moto Jove Molins. Tots els continguts són propietat de Moto Jove Molins o s'utilitzen amb la deguda autorització. Queda prohibida la seva reproducció sense consentiment previ. Aquest avís legal es regeix per la legislació espanyola.</p>
+    </div>
+  </div>
+</div>
+<div class="legal-modal-overlay" id="legalPrivacidadMotos">
+  <div class="legal-modal">
+    <button class="modal-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <div class="lang-es">
+      <h2>Política de privacidad</h2>
+      <p>Moto Jove Molins, Rambla de la Granja, 22, 08750 Molins de Rei, Barcelona. Los datos recogidos mediante formularios se utilizan exclusivamente para atender consultas. Puede ejercer sus derechos de acceso, rectificación y supresión contactándonos al 936 80 15 84.</p>
+    </div>
+    <div class="lang-cat">
+      <h2>Política de privacitat</h2>
+      <p>Moto Jove Molins, Rambla de la Granja, 22, 08750 Molins de Rei, Barcelona. Les dades recollides mitjançant formularis s'utilitzen exclusivament per atendre consultes. Pot exercir els seus drets d'accés, rectificació i supressió contactant-nos al 936 80 15 84.</p>
+    </div>
+  </div>
+</div>
+<div class="legal-modal-overlay" id="legalCookiesMotos">
+  <div class="legal-modal">
+    <button class="modal-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <div class="lang-es">
+      <h2>Política de cookies</h2>
+      <p>Utilizamos cookies técnicas necesarias para el funcionamiento del sitio web, como la preferencia de idioma. También utilizamos Google Maps, que puede instalar sus propias cookies. Puede configurar su navegador para bloquear o eliminar las cookies.</p>
+    </div>
+    <div class="lang-cat">
+      <h2>Política de cookies</h2>
+      <p>Utilitzem cookies tècniques necessàries per al funcionament del lloc web, com la preferència d'idioma. També utilitzem Google Maps, que pot instal·lar les seves pròpies cookies. Pot configurar el seu navegador per bloquejar o eliminar les cookies.</p>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
