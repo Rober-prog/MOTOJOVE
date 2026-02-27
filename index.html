@@ -50,6 +50,10 @@
           <span class="lang-es">Motos en venta</span><span class="lang-cat">Motos en venda</span>
         </a></li>
       </ul>
+      <a href="tel:936801584" class="nav-phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.58 1 1 0 011 1v3.61a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.61a1 1 0 011 1 11.72 11.72 0 00.58 3.66 1 1 0 01-.24 1.01l-2.33 2.12z"/></svg>
+        936 80 15 84
+      </a>
       <div class="lang-selector">
         <button class="lang-btn" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="cat">CAT</button>
@@ -69,6 +73,10 @@
   <a href="#mapa"><span class="lang-es">Mapa</span><span class="lang-cat">Mapa</span></a>
   <button data-open-schedule><span class="lang-es">Horario</span><span class="lang-cat">Horari</span></button>
   <a href="motos.html"><span class="lang-es">Motos en venta</span><span class="lang-cat">Motos en venda</span></a>
+  <a href="tel:936801584" class="mobile-phone">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.58 1 1 0 011 1v3.61a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.61a1 1 0 011 1 11.72 11.72 0 00.58 3.66 1 1 0 01-.24 1.01l-2.33 2.12z"/></svg>
+    936 80 15 84
+  </a>
   <div class="mobile-lang-selector">
     <button class="lang-btn" data-lang="es">ES</button>
     <button class="lang-btn" data-lang="cat">CAT</button>
@@ -79,255 +87,22 @@
      HERO SECTION
      ============================================ -->
 <section class="hero" id="hero">
-  <!-- Canvas for sparks/particles -->
-  <canvas id="heroCanvas"></canvas>
-
-  <!-- Perspective road lines -->
-  <div class="road-lines">
-    <div class="road-line"></div><div class="road-line"></div><div class="road-line"></div>
-    <div class="road-line"></div><div class="road-line"></div><div class="road-line"></div>
-    <div class="road-line"></div><div class="road-line"></div>
-  </div>
-
-  <!-- Ambient glow orbs -->
-  <div class="hero-glow hero-glow--1"></div>
-  <div class="hero-glow hero-glow--2"></div>
-  <div class="hero-glow hero-glow--3"></div>
-
-  <!-- Giant neon motorcycle -->
-  <div class="neon-moto">
-    <svg viewBox="0 0 900 440" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
-          <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-        </filter>
-        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="8" result="g"/>
-          <feMerge><feMergeNode in="g"/><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-        <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
-          <feGaussianBlur stdDeviation="18" result="g"/>
-          <feMerge><feMergeNode in="g"/><feMergeNode in="g"/><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-        <linearGradient id="exhaustGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#f6ad51"/>
-          <stop offset="50%" stop-color="#ff6b35"/>
-          <stop offset="100%" stop-color="#ff2d2d" stop-opacity="0"/>
-        </linearGradient>
-        <radialGradient id="headlightGrad" cx="0.3" cy="0.5" r="0.7">
-          <stop offset="0%" stop-color="#fff8e0"/>
-          <stop offset="40%" stop-color="#f6ad51" stop-opacity=".6"/>
-          <stop offset="100%" stop-color="#f6ad51" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-
-      <!-- === REAR WHEEL === -->
-      <g class="wheel-rear">
-        <!-- Tire -->
-        <circle cx="180" cy="340" r="80" stroke="#f6ad51" stroke-width="3" filter="url(#neon)" opacity=".7"/>
-        <circle cx="180" cy="340" r="72" stroke="#f6ad51" stroke-width="1.5" opacity=".3"/>
-        <circle cx="180" cy="340" r="65" stroke="#f6ad51" stroke-width=".7" opacity=".15" stroke-dasharray="6 4"/>
-        <!-- Hub -->
-        <circle cx="180" cy="340" r="12" fill="#f6ad51" opacity=".4" filter="url(#glow)"/>
-        <circle cx="180" cy="340" r="6" fill="#f6ad51" opacity=".7"/>
-        <!-- Spokes (rotating) -->
-        <g class="spokes-rear">
-          <line x1="180" y1="268" x2="180" y2="290" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="180" y1="390" x2="180" y2="412" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="108" y1="340" x2="130" y2="340" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="230" y1="340" x2="252" y2="340" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="123" y1="283" x2="139" y2="299" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="221" y1="381" x2="237" y2="397" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="237" y1="283" x2="221" y2="299" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="139" y1="381" x2="123" y2="397" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-        </g>
-        <!-- Brake disc -->
-        <circle cx="180" cy="340" r="30" stroke="#f6ad51" stroke-width=".5" opacity=".2" stroke-dasharray="3 5"/>
-      </g>
-
-      <!-- === FRONT WHEEL === -->
-      <g class="wheel-front">
-        <circle cx="700" cy="340" r="80" stroke="#f6ad51" stroke-width="3" filter="url(#neon)" opacity=".7"/>
-        <circle cx="700" cy="340" r="72" stroke="#f6ad51" stroke-width="1.5" opacity=".3"/>
-        <circle cx="700" cy="340" r="65" stroke="#f6ad51" stroke-width=".7" opacity=".15" stroke-dasharray="6 4"/>
-        <circle cx="700" cy="340" r="12" fill="#f6ad51" opacity=".4" filter="url(#glow)"/>
-        <circle cx="700" cy="340" r="6" fill="#f6ad51" opacity=".7"/>
-        <g class="spokes-front">
-          <line x1="700" y1="268" x2="700" y2="290" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="700" y1="390" x2="700" y2="412" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="628" y1="340" x2="650" y2="340" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="750" y1="340" x2="772" y2="340" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="643" y1="283" x2="659" y2="299" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="741" y1="381" x2="757" y2="397" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="757" y1="283" x2="741" y2="299" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-          <line x1="659" y1="381" x2="643" y2="397" stroke="#f6ad51" stroke-width="1.2" opacity=".5"/>
-        </g>
-        <circle cx="700" cy="340" r="30" stroke="#f6ad51" stroke-width=".5" opacity=".2" stroke-dasharray="3 5"/>
-      </g>
-
-      <!-- === FRAME / CHASSIS === -->
-      <g filter="url(#neon)">
-        <!-- Swingarm -->
-        <path d="M180 340 L290 260" stroke="#f6ad51" stroke-width="3.5" opacity=".6" stroke-linecap="round"/>
-        <!-- Main frame triangle -->
-        <path d="M290 260 L380 155 L520 140 L610 180 L650 260 L700 340" stroke="#f6ad51" stroke-width="3" opacity=".6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- Subframe -->
-        <path d="M290 260 L330 200 L380 155" stroke="#f6ad51" stroke-width="2" opacity=".35" fill="none" stroke-linecap="round"/>
-        <!-- Rear fender hint -->
-        <path d="M155 280 Q180 260 210 270" stroke="#f6ad51" stroke-width="1.5" opacity=".3" fill="none"/>
-      </g>
-
-      <!-- === ENGINE BLOCK === -->
-      <g filter="url(#neon)">
-        <rect x="340" y="220" width="120" height="75" rx="12" stroke="#f6ad51" stroke-width="2.5" opacity=".5" fill="rgba(246,173,81,.03)"/>
-        <!-- Cylinder head -->
-        <rect x="355" y="190" width="35" height="35" rx="6" stroke="#f6ad51" stroke-width="2" opacity=".4" fill="none"/>
-        <rect x="395" y="195" width="30" height="30" rx="5" stroke="#f6ad51" stroke-width="1.5" opacity=".3" fill="none"/>
-        <!-- Cooling fins -->
-        <line x1="350" y1="235" x2="450" y2="235" stroke="#f6ad51" stroke-width=".8" opacity=".25"/>
-        <line x1="350" y1="248" x2="450" y2="248" stroke="#f6ad51" stroke-width=".8" opacity=".2"/>
-        <line x1="350" y1="261" x2="450" y2="261" stroke="#f6ad51" stroke-width=".8" opacity=".15"/>
-        <line x1="350" y1="274" x2="450" y2="274" stroke="#f6ad51" stroke-width=".8" opacity=".1"/>
-        <!-- Crankcase detail -->
-        <circle cx="400" cy="270" r="15" stroke="#f6ad51" stroke-width="1" opacity=".2" fill="none"/>
-        <circle cx="400" cy="270" r="5" fill="#f6ad51" opacity=".15"/>
-      </g>
-
-      <!-- === FUEL TANK === -->
-      <g filter="url(#neon)">
-        <path d="M395 130 Q440 90 520 105 Q555 115 560 145 Q555 165 510 165 Q440 165 400 155 Z" stroke="#f6ad51" stroke-width="2.5" opacity=".6" fill="rgba(246,173,81,.04)"/>
-        <!-- Tank highlight -->
-        <path d="M420 115 Q460 100 500 110" stroke="#f6ad51" stroke-width="1" opacity=".35" fill="none"/>
-        <!-- Tank cap -->
-        <circle cx="470" cy="120" r="6" stroke="#f6ad51" stroke-width="1.5" opacity=".4" fill="rgba(246,173,81,.1)"/>
-      </g>
-
-      <!-- === SEAT / TAIL === -->
-      <g filter="url(#neon)">
-        <path d="M315 165 Q340 130 395 135 L395 155 Q360 160 330 180 Z" stroke="#f6ad51" stroke-width="2" opacity=".45" fill="rgba(246,173,81,.02)"/>
-        <!-- Tail light -->
-        <rect x="300" y="168" width="18" height="6" rx="3" fill="#ff3333" opacity=".6" filter="url(#glow)">
-          <animate attributeName="opacity" values=".4;.8;.4" dur="1.5s" repeatCount="indefinite"/>
-        </rect>
-      </g>
-
-      <!-- === FRONT FORK / SUSPENSION === -->
-      <g filter="url(#neon)">
-        <line x1="640" y1="185" x2="695" y2="270" stroke="#f6ad51" stroke-width="4" opacity=".55" stroke-linecap="round"/>
-        <line x1="648" y1="178" x2="703" y2="268" stroke="#f6ad51" stroke-width="2.5" opacity=".3" stroke-linecap="round"/>
-        <!-- Front fender -->
-        <path d="M665 290 Q700 265 735 290" stroke="#f6ad51" stroke-width="1.5" opacity=".3" fill="none"/>
-      </g>
-
-      <!-- === HANDLEBARS === -->
-      <g filter="url(#neon)">
-        <path d="M615 155 Q635 125 660 130 Q680 135 685 155" stroke="#f6ad51" stroke-width="3" opacity=".55" fill="none" stroke-linecap="round"/>
-        <!-- Mirrors -->
-        <circle cx="612" cy="148" r="5" stroke="#f6ad51" stroke-width="1.5" opacity=".3" fill="none"/>
-        <circle cx="690" cy="152" r="5" stroke="#f6ad51" stroke-width="1.5" opacity=".3" fill="none"/>
-      </g>
-
-      <!-- === HEADLIGHT with beam === -->
-      <g class="headlight-group">
-        <circle cx="718" cy="210" r="18" stroke="#f6ad51" stroke-width="2.5" opacity=".7" fill="rgba(246,173,81,.1)" filter="url(#glow)"/>
-        <circle cx="718" cy="210" r="10" fill="#f6ad51" opacity=".5" filter="url(#glow)">
-          <animate attributeName="opacity" values=".3;.7;.3" dur="2.5s" repeatCount="indefinite"/>
-        </circle>
-        <!-- Light beam cone -->
-        <path d="M736 205 L850 170 L860 240 L736 220 Z" fill="url(#headlightGrad)" opacity=".12" filter="url(#bigGlow)">
-          <animate attributeName="opacity" values=".08;.18;.08" dur="3s" repeatCount="indefinite"/>
-        </path>
-      </g>
-
-      <!-- === EXHAUST with flame === -->
-      <g filter="url(#neon)">
-        <path d="M260 290 Q290 310 310 298 Q350 275 400 285 Q420 290 440 285" stroke="#f6ad51" stroke-width="3" opacity=".45" fill="none" stroke-linecap="round"/>
-        <circle cx="445" cy="284" r="4" fill="#f6ad51" opacity=".35"/>
-      </g>
-      <!-- Exhaust flame -->
-      <g class="exhaust-flame" filter="url(#bigGlow)">
-        <path d="M158 310 Q130 320 115 310 Q95 295 80 310 Q65 325 45 315" stroke="url(#exhaustGrad)" stroke-width="4" opacity=".5" fill="none" stroke-linecap="round">
-          <animate attributeName="d" values="M158 310 Q130 320 115 310 Q95 295 80 310 Q65 325 45 315;M158 310 Q135 295 115 305 Q100 318 80 305 Q60 292 40 305;M158 310 Q130 320 115 310 Q95 295 80 310 Q65 325 45 315" dur="0.4s" repeatCount="indefinite"/>
-        </path>
-        <path d="M158 310 Q140 330 120 320 Q100 310 85 325" stroke="#ff6b35" stroke-width="2" opacity=".3" fill="none">
-          <animate attributeName="d" values="M158 310 Q140 330 120 320 Q100 310 85 325;M158 312 Q138 295 118 310 Q102 320 87 308;M158 310 Q140 330 120 320 Q100 310 85 325" dur="0.3s" repeatCount="indefinite"/>
-        </path>
-      </g>
-
-      <!-- === CHAIN === -->
-      <path d="M210 340 Q240 310 290 295 Q320 285 350 290" stroke="#f6ad51" stroke-width="1" opacity=".2" fill="none" stroke-dasharray="4 3">
-        <animate attributeName="stroke-dashoffset" values="0;-14" dur="0.5s" repeatCount="indefinite"/>
-      </path>
-
-      <!-- === GROUND SHADOW === -->
-      <ellipse cx="440" cy="425" rx="320" ry="8" fill="#f6ad51" opacity=".04" filter="url(#bigGlow)"/>
-
-      <!-- === SPEED STREAKS behind moto === -->
-      <g class="speed-streaks" opacity=".35">
-        <line x1="0" y1="295" x2="80" y2="295" stroke="#f6ad51" stroke-width="1.5" stroke-linecap="round">
-          <animate attributeName="x1" values="-80;-200" dur="1.2s" repeatCount="indefinite"/>
-          <animate attributeName="x2" values="80;-40" dur="1.2s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values=".5;0" dur="1.2s" repeatCount="indefinite"/>
-        </line>
-        <line x1="20" y1="340" x2="120" y2="340" stroke="#f6ad51" stroke-width="2" stroke-linecap="round">
-          <animate attributeName="x1" values="-60;-220" dur="1s" repeatCount="indefinite"/>
-          <animate attributeName="x2" values="120;-20" dur="1s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values=".6;0" dur="1s" repeatCount="indefinite"/>
-        </line>
-        <line x1="-20" y1="370" x2="60" y2="370" stroke="#f6ad51" stroke-width="1" stroke-linecap="round">
-          <animate attributeName="x1" values="-40;-180" dur="1.4s" repeatCount="indefinite"/>
-          <animate attributeName="x2" values="60;-30" dur="1.4s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values=".4;0" dur="1.4s" repeatCount="indefinite"/>
-        </line>
-        <line x1="30" y1="255" x2="90" y2="255" stroke="#f6ad51" stroke-width="1" stroke-linecap="round">
-          <animate attributeName="x1" values="-30;-160" dur="1.6s" repeatCount="indefinite"/>
-          <animate attributeName="x2" values="90;0" dur="1.6s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values=".3;0" dur="1.6s" repeatCount="indefinite"/>
-        </line>
-      </g>
-    </svg>
-  </div>
-
-  <!-- Tachometer -->
-  <div class="hero-tacho">
-    <svg viewBox="0 0 200 120" fill="none">
-      <path d="M20 110 A80 80 0 0 1 180 110" stroke="#333" stroke-width="6" fill="none" stroke-linecap="round"/>
-      <path d="M20 110 A80 80 0 0 1 180 110" stroke="url(#tachoGrad)" stroke-width="6" fill="none" stroke-linecap="round" class="tacho-fill" stroke-dasharray="252" stroke-dashoffset="80"/>
-      <defs>
-        <linearGradient id="tachoGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#f6ad51"/>
-          <stop offset="70%" stop-color="#ff6b35"/>
-          <stop offset="100%" stop-color="#ff2d2d"/>
-        </linearGradient>
-      </defs>
-      <!-- Needle -->
-      <line x1="100" y1="110" x2="45" y2="55" stroke="#f6ad51" stroke-width="2.5" stroke-linecap="round" class="tacho-needle" filter="url(#neon)"/>
-      <circle cx="100" cy="110" r="6" fill="#f6ad51" opacity=".8"/>
-      <!-- RPM ticks -->
-      <g opacity=".3" stroke="#f6ad51" stroke-width="1">
-        <line x1="28" y1="95" x2="38" y2="100"/><line x1="22" y1="78" x2="33" y2="82"/>
-        <line x1="25" y1="60" x2="36" y2="63"/><line x1="38" y1="42" x2="47" y2="48"/>
-        <line x1="57" y1="28" x2="64" y2="36"/><line x1="80" y1="20" x2="84" y2="30"/>
-        <line x1="100" y1="18" x2="100" y2="28"/><line x1="120" y1="20" x2="116" y2="30"/>
-        <line x1="143" y1="28" x2="136" y2="36"/><line x1="162" y1="42" x2="153" y2="48"/>
-        <line x1="175" y1="60" x2="164" y2="63"/><line x1="178" y1="78" x2="167" y2="82"/>
-        <line x1="172" y1="95" x2="162" y2="100"/>
-      </g>
-      <text x="100" y="104" fill="#f6ad51" font-size="10" font-weight="800" text-anchor="middle" font-family="Montserrat,sans-serif" opacity=".6">RPM</text>
-    </svg>
+  <!-- Video background -->
+  <div class="hero-video-wrap">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="VIDEOHERO.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
   </div>
 
   <!-- Hero content -->
   <div class="hero-content">
+    <img src="LOGO.png" alt="Moto Jove Molins" class="hero-logo">
+    <h1 class="hero-title">MOTOJOVEMOLINS</h1>
     <div class="hero-badge">
       <span class="lang-es">Taller multimarca · Concesionario</span>
       <span class="lang-cat">Taller multimarca · Concessionari</span>
     </div>
-    <h1 class="hero-title">
-      <span class="lang-es">Tu moto en las <span class="highlight neon-text">mejores manos</span></span>
-      <span class="lang-cat">La teva moto en les <span class="highlight neon-text">millors mans</span></span>
-    </h1>
     <p class="hero-subtitle">
       <span class="lang-es">Reparación, mantenimiento y venta de motocicletas en Molins de Rei. Más de 20 años de experiencia, pasión y confianza al servicio del motorista.</span>
       <span class="lang-cat">Reparació, manteniment i venda de motocicletes a Molins de Rei. Més de 20 anys d'experiència, passió i confiança al servei del motorista.</span>
@@ -339,8 +114,8 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
       </a>
       <a href="motos.html" class="btn btn-outline">
-        <span class="lang-es">Ver motos en venta</span>
-        <span class="lang-cat">Veure motos en venda</span>
+        <span class="lang-es">Motos en venta</span>
+        <span class="lang-cat">Motos en venda</span>
       </a>
     </div>
   </div>
