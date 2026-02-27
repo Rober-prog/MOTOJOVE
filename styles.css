@@ -562,6 +562,7 @@ body.lang-cat .lang-es { display: none !important; }
   margin-bottom: 16px;
   line-height: 1.8;
   font-size: .95rem;
+  text-align: justify;
 }
 .about-stats {
   display: flex;
